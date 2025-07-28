@@ -1,0 +1,185 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .parent {
+      display: flex;
+      flex-direction: column;
+    }
+    .personal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(235, 227, 227);
+      padding: 10px 20px;
+    }
+    .personal h5 {
+      background-image: linear-gradient(plum, blue);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .personal nav ul {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+    }
+    .personal nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .Developer {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to right, purple, violet, plum);
+      color: white;
+    }
+    .Developer h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    .Developer p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .buton {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .buton button {
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      background: rgba(128, 0, 128, 0.3);
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .About {
+      background-color: rgb(235, 227, 227);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .About h1, .Core_R h1, .Work_to h1 {
+      background-image: linear-gradient(plum, blue);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .About p {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .Core_R {
+      background: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .image_cont {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .image_cont img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .Work_to {
+      padding: 40px 20px;
+      background: linear-gradient(to right, purple, violet, plum);
+      color: white;
+      text-align: center;
+    }
+    .Work_to p {
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .formParent {
+      background-color: #c987db;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .formChild {
+      display: flex;
+      flex-direction: column;
+    }
+    .formChild label {
+      font-weight: bold;
+      color: indigo;
+      margin-bottom: 5px;
+    }
+    .formChild input,
+    .formChild textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .foot {
+      background-color: rgb(235, 227, 227);
+      padding: 10px;
+      text-align: center;
+    }
+    .foot nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+    .foot a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    a:hover {
+      color: hotpink;
+    }
+    a:active {
+      color: plum;
+    }
+
+    @media (max-width: 768px) {
+      .personal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .Developer h1 {
+        font-size: 2rem;
+      }
+      .formParent {
+        width: 90%;
+      }
+    }
