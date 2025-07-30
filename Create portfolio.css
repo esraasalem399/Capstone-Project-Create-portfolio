@@ -17,6 +17,11 @@
       align-items: center;
       background-color: rgb(235, 227, 227);
       padding: 10px 20px;
+     position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
     .personal h5 {
       background-image: linear-gradient(plum, blue);
@@ -147,6 +152,11 @@
       background-color: rgb(235, 227, 227);
       padding: 10px;
       text-align: center;
+     position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
     .foot nav ul {
       display: flex;
